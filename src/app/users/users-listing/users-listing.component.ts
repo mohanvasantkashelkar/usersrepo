@@ -1,7 +1,7 @@
 import { UserDeleteComponent } from './../user-delete/user-delete.component';
-import { MatDialog, MAT_DIALOG_DATA } from '@angular/material';
+import { MatDialog, MatPaginator, MatTableDataSource, MAT_DIALOG_DATA } from '@angular/material';
 import { UserService } from './../../services/user.service';
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, Inject, OnInit, ViewChild } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { UserEditComponent } from '../user-edit/user-edit.component';
 
@@ -11,21 +11,20 @@ import { UserEditComponent } from '../user-edit/user-edit.component';
   styleUrls: ['./users-listing.component.scss']
 })
 export class UsersListingComponent implements OnInit {
+  @ViewChild(MatPaginator,{ static: true }) paginator: MatPaginator;
   displayedColumns = ["name", "email", "gender", "address", "dateOfBirth", "actions"];
-  dataSource = [];
-  dataSourceObserve : BehaviorSubject<any> = new BehaviorSubject(this.dataSource);
+  dataSource : MatTableDataSource<any>;
+
   constructor(
     private userService: UserService,
     private dialog: MatDialog) { }
 
   ngOnInit() {
-
-    this.userService.getUsers().subscribe((response : any)=>{
-      this.dataSource = response;
-      this.dataSourceObserve.next( response );
-    });
+    this.userService.getUsers().subscribe((response : [])=>{
+      this.dataSource = new MatTableDataSource(response);
+      this.dataSource.paginator = this.paginator;
+    });    
   }
-
 
   onEdit(editContent : any){
     this.dialog.open(UserEditComponent,{
@@ -44,9 +43,4 @@ export class UsersListingComponent implements OnInit {
       }
     });
   }
-}
-
-
-export class User{
-
 }

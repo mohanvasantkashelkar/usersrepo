@@ -2,7 +2,7 @@
 
 <mat-dialog-content>
   <form [formGroup]="deleteForm" (submit)="handleDeleteSubmit()">
-    <p class="alert-text">Are you sure you want to delete {{ data?.deleteContent?.name }}</p>
+    <p class="alert-text">Are you sure you want to delete {{ data?.deleteContent?.name }}?</p>
 
     <div class="btn-wrap text-right">
       <button mat-stroked-button color="primary" type="submit" class="btn-radial">No</button>

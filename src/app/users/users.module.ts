@@ -23,7 +23,6 @@ import { UserEditComponent } from './user-edit/user-edit.component';
 import { UserDeleteComponent } from './user-delete/user-delete.component';
 import { MatMomentDateModule } from '@angular/material-moment-adapter';
 
-
 @NgModule({
   declarations: [
     UsersListingComponent,
@@ -47,7 +46,8 @@ import { MatMomentDateModule } from '@angular/material-moment-adapter';
     UsersRoutingModule,
     MatNativeDateModule,
     MatButtonModule,
-    MatMomentDateModule
+    MatMomentDateModule,
+    MatPaginatorModule
   ],
   entryComponents:[
     UserEditComponent,
