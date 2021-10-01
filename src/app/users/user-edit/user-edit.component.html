@@ -1,0 +1,51 @@
+<h2 mat-dialog-title>Edit</h2>
+
+<mat-dialog-content>
+  <form [formGroup]="editForm" (submit)="handleEditSubmit()">
+    <div class="form-group">
+      <mat-form-field appearance="outline" class="form-field">
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="name" placeholder="Enter Name">
+      </mat-form-field>    
+    </div>
+
+    <div class="form-group">
+      <mat-form-field appearance="outline" class="form-field">
+        <mat-label>Email Address</mat-label>
+        <input matInput formControlName="email" placeholder="Email Address">
+      </mat-form-field>
+    </div>
+
+    <div class="form-group">
+      <mat-radio-group class="form-field" formControlName="gender">
+        <mat-label class="radio-label">Gender</mat-label>
+
+        <mat-radio-button value="male" appearance="outline">
+          Male
+        </mat-radio-button>
+        <mat-radio-button value="female" appearance="outline">
+          Female
+        </mat-radio-button>
+      </mat-radio-group>
+    </div>
+
+    <div class="form-group">
+      <mat-form-field appearance="outline" class="form-field">
+        <mat-label>Date Of Birth</mat-label>
+        <input matInput [matDatepicker]="dateOfBirth" formControlName="dateOfBirth">
+        <mat-datepicker-toggle matSuffix [for]="dateOfBirth"></mat-datepicker-toggle>
+        <mat-datepicker #dateOfBirth></mat-datepicker>
+      </mat-form-field>
+    </div>
+
+    <div class="form-group">
+      <mat-form-field appearance="outline" class="form-field">
+        <textarea matInput placeholder="Address" class="input-textarea" formControlName="address"></textarea>
+      </mat-form-field>
+    </div>
+
+    <div class="btn-wrap text-right">
+      <button mat-raised-button color="primary" type="submit" class="btn-radial">Submit</button>
+    </div>
+  </form>
+</mat-dialog-content>

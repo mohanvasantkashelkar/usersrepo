@@ -1,0 +1,52 @@
+[
+  {
+    "dateOfBirth": "1/1/1985",
+    "name": "Bird Ramsey",
+    "gender": "male",
+    "address": "USA",
+    "email": "birdramsey@nimon.com"
+  },
+  {    
+    "dateOfBirth": "1/1/1985",
+    "name": "Lillian Burgess",
+    "gender": "male",
+    "address": "USA",
+    "email": "birdramsey@nimon.com"
+  },
+  {
+    "dateOfBirth": "1/1/1985",
+    "name": "Kristie Cole",
+    "gender": "male",
+    "address": "USA",
+    "email": "kristiecole@quadeebo.com"
+  },
+  {
+    "dateOfBirth": "1/1/1985",
+    "name": "Leonor Cross",
+    "gender": "Female",
+    "address": "USA",
+    "email": "leonorcross@quadeebo.com"
+  },
+  {
+    "dateOfBirth": "1/1/1985",
+    "name": "Marsh Mccall",
+    "gender": "male",
+    "address": "USA",
+    "email": "marshmccall@quadeebo.com"
+  },
+  {
+    "dateOfBirth": "1/1/1985",
+    "name": "Andy Mccall",
+    "gender": "Female",
+    "address": "USA",
+    "email": "andymccall@quadeebo.com"
+  },
+
+  {
+    "dateOfBirth": "1/1/1985",
+    "name": "justin Mccall",
+    "gender": "Female",
+    "address": "USA",
+    "email": "justin@quadeebo.com"
+  }
+]

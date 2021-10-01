@@ -1,0 +1,43 @@
+.mat-dialog-title{
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Poppins', inherit;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.form-group{
+  margin-bottom: 15px;
+}
+
+.form-field{
+  width: 100%;
+  display: block;
+
+  &.mat-radio-group{
+    margin-bottom: 30px;
+  }
+}
+
+.mat-radio-group{
+  .radio-label{
+    margin-right: 10px; 
+  }
+
+  .mat-radio-button {
+    margin-left: 25px;
+  }  
+}
+
+.btn-radial{
+  font-size: 15px;
+  border-radius: 25px;
+  padding: 7px 30px;
+  min-width: 142px;
+  text-transform: uppercase;
+}

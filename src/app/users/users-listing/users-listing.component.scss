@@ -1,0 +1,49 @@
+/* Users Card */
+.mat-card-title{
+  font-size: 21px;
+  margin-bottom: 25px;
+}
+
+.mat-card{
+  padding: 25px 30px;
+}
+
+/* Material Table   */
+::ng-deep{
+
+
+  .mat-table{
+    width:100%;
+
+    .mat-header-row{
+      height: auto;
+      background-color: #37a99e;      
+
+      th{
+        font-weight: 700;
+        font-size: 15px;
+        padding: 20px 15px !important;
+        color:#fff;
+      }
+    }
+
+    td{
+      padding : 15px !important;
+      font-size: 15px;
+    }
+
+    th, td{
+      font-family: 'Poppins';
+    }
+  }
+}
+.btn-action{
+  border: 0 none;
+  background: transparent;
+  margin: 2px 5px;
+
+  .material-icons {
+    font-size: 18px;
+    color: #37a99e;
+  }
+}
