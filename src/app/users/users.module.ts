@@ -1,3 +1,4 @@
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -47,7 +48,8 @@ import { MatMomentDateModule } from '@angular/material-moment-adapter';
     MatNativeDateModule,
     MatButtonModule,
     MatMomentDateModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    FlexLayoutModule
   ],
   entryComponents:[
     UserEditComponent,

@@ -43,4 +43,13 @@ export class UsersListingComponent implements OnInit {
       }
     });
   }
+
+  getProgressByColumn(columnName:string, columnValue:string):number{
+
+    let count = this.dataSource.data.filter((data)=>{
+      return data[columnName].toLowerCase() === columnValue.toLowerCase();
+    }).length;
+
+    return count;
+  }
 }

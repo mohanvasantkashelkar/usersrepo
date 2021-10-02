@@ -47,3 +47,21 @@
     color: #37a99e;
   }
 }
+
+.sidebar-progress{
+  .mat-card-title{
+    text-transform: uppercase;
+  }
+
+  p{
+    font-size: 17px;
+    margin-bottom: 15px;
+    font-family: Poppins, sans-serif;
+  }
+
+  .label{
+    font-weight: 700;
+    min-width: 100px;
+    display: inline-block;
+  }
+}
